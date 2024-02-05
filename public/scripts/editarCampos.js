@@ -37,7 +37,7 @@ function papelera(cod){
 let 	item = nuevoItem(a);
 let dias = item.diasRest;
 let venc = ObtenerFecha().split('/');
-    venc = venc[2]+'-'+venc[1]+'-'+(venc[0]);
+    venc = 0;//venc[2]+'-'+venc[1]+'-'+(venc[0]);
     if((dias)>=0){
     				if(confirm('queres enviar el item '+(item.plu)+' '+(item.nombre).trim()+' a la papelera?')){
 localStorage.setItem(item.plu,(item.plu+','+item.cant+','+venc+','+item.nombre));
